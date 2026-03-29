@@ -1,0 +1,11 @@
+h1, h2 {
+    color: #4B0082;
+}
+
+p, label, ul, li, table, caption, th, td, legend {
+    color: #2F4F4F; 
+}
+
+.cor-3 {
+    color: #E60000; 
+}
