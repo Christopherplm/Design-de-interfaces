@@ -1,45 +1,47 @@
-Projeto: História do Brasil — Da Colônia à Democracia
-Este projeto consiste em um site informativo e responsivo sobre os principais períodos históricos do Brasil. Desenvolvido como parte da disciplina de Interface Web no IFRS Rio Grande, o site explora desde o período colonial até a redemocratização contemporânea.
+# 🇧🇷 História do Brasil: Da Colônia à Democracia
 
-🚀 Tecnologias Utilizadas
-HTML5: Estruturação semântica do conteúdo (uso de header, nav, main, section, figure).
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
-CSS3: Estilização moderna utilizando:
+Este projeto é um site informativo desenvolvido para a disciplina de **Interface Web** (IFRS Rio Grande). O objetivo é apresentar uma linha do tempo interativa e responsiva sobre os marcos fundamentais da construção do Brasil.
 
-Variáveis CSS (:root): Para uma paleta de cores consistente e temática.
+---
 
-Flexbox: Para alinhamento de menus, seções e uma galeria de imagens flexível.
+## 📌 Visão Geral
+O site percorre os principais processos de transição e conflitos sociais do país, utilizando uma interface limpa, temática (estilo papel antigo) e totalmente adaptável a diferentes dispositivos.
 
-Responsividade: Media Queries configuradas para dispositivos de 375px a 1920px.
+### 📖 Conteúdo Histórico
+O conteúdo está organizado cronologicamente:
+* **Brasil Colônia:** Economia açucareira e escravidão.
+* **Império:** Independência e o Segundo Reinado.
+* **Era Vargas:** Industrialização e direitos trabalhistas.
+* **Ditadura Militar:** Anos de chumbo e o movimento "Diretas Já".
+* **Nova República:** A redemocratização e a Constituição de 1988.
 
-Google Fonts: Integração das fontes Merriweather e Source Sans 3.
+---
 
-📖 Conteúdo Abordado
-O site é dividido em seções cronológicas:
+## 🛠️ Especificações Técnicas
 
-Brasil Colônia: Ciclos econômicos e a base estrutural da escravidão.
+### HTML Semântico
+* Uso de tags estruturais: `<header>`, `<nav>`, `<main>`, `<section>`, `<figure>` e `<footer>`.
+* Navegação interna via âncoras para melhor experiência do usuário.
 
-Império Brasileiro: O processo de independência e o Segundo Reinado de D. Pedro II.
+### CSS Moderno
+* **Variáveis (`:root`):** Centralização da paleta de cores (Marrom Histórico, Dourado Destaque e Bege Fundo).
+* **Unidades Relativas (`rem`):** Utilizadas para garantir acessibilidade e escalabilidade das fontes.
+* **Flexbox:** Aplicado no menu de navegação e na galeria de imagens para alinhamento dinâmico.
+* **Responsividade:** Uso de `@media queries` para garantir que o site funcione perfeitamente de **375px até 1920px**.
 
-Era Vargas: A modernização do Estado e os direitos trabalhistas.
+---
 
-Ditadura Militar: Repressão, censura e o movimento das Diretas Já.
+## 🖼️ Galeria Cronológica
+A galeria de imagens foi implementada com cartões flexíveis que se reorganizam conforme o tamanho da tela, mantendo a ordem histórica dos fatos.
 
-Brasil Contemporâneo: A redemocratização e a "Constituição Cidadã" de 1988.
+---
 
-Galeria Histórica: Compilado de imagens e registros visuais dos períodos citados.
+## 📂 Como Clonar e Executar
 
-🛠️ Funcionalidades
-Navegação Interna: Menu com âncoras para fácil acesso às seções.
-
-Acessibilidade Visual: Legendas de imagens (figcaption) com links diretos para referências externas.
-
-Design Adaptativo: Layout que se ajusta automaticamente para visualização em celulares, tablets e desktops.
-
-👤 Autor
-Desenvolvido por Christopher Pereira Lopes.
-
-## 🔧 Como executar
-1. Clone o repositório:
+1. No terminal, clone o repositório:
    ```bash
-   git clone https://github.com/Christopherplm/Design-de-interfaces.git
+   git clone https://github.com/Christopherplm/Design-de-interfaces.git 
