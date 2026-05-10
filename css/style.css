@@ -1,51 +1,30 @@
-/* =============================================
-   GOOGLE FONTS - @import (Aula Flexbox)
-   Deve ser o primeiro comando do arquivo CSS
-   ============================================= */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600&display=swap');
 
-/* =============================================
-   VARIÁVEIS - :root (Aula Flexbox)
-   Cores e medidas reutilizáveis em todo documento
-   ============================================= */
 :root {
-    --cor-primaria: #7B3F00;    /* Marrom histórico */
-    --cor-secundaria: #4A2800;  /* Marrom escuro para header/footer */
-    --cor-destaque: #C8860A;    /* Dourado para detalhes */
-    --cor-texto: #2C2C2C;       /* Quase preto para leitura */
-    --cor-fundo: #F5F0E8;       /* Bege suave, remetendo a papel antigo */
+    --cor-primaria: #7B3F00;
+    --cor-secundaria: #4A2800;
+    --cor-destaque: #C8860A;
+    --cor-texto: #2C2C2C;
+    --cor-fundo: #F5F0E8;
     --cor-branca: #ffffff;
-    --cor-caixa: #FDF8F2;       /* Bege mais claro para caixas internas */
+    --cor-caixa: #FDF8F2;
 }
 
-/* =============================================
-   RESET - Seletor universal (Aula 5)
-   Zera dimensões pré-programadas do navegador
-   ============================================= */
 * {
-    box-sizing: border-box; /* Aula 4: padding e border não aumentam o width */
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* =============================================
-   BODY
-   Aula 4: font-family, background-color
-   Aula 5: max-width + margin auto centraliza o bloco
-   ============================================= */
 body {
     font-family: 'Source Sans 3', sans-serif;
     color: var(--cor-texto);
     background-color: var(--cor-fundo);
-    max-width: 960px;   /* Aula Flexbox: limita largura máxima */
-    margin: 0 auto;     /* Aula 5: centraliza caixa block na tela */
+    max-width: 960px;
+    margin: 0 auto;
     padding: 0 20px;
 }
 
-/* =============================================
-   TIPOGRAFIA
-   Aula 4: color, margin, font-family
-   ============================================= */
 h1, h2, h3 {
     font-family: 'Merriweather', serif;
     color: var(--cor-primaria);
@@ -59,8 +38,8 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
-    border-bottom: 2px solid var(--cor-destaque); /* Aula 4: border-bottom decorativo */
-    padding-bottom: 6px;                          /* Aula 4: padding para afastar o texto da borda */
+    border-bottom: 2px solid var(--cor-destaque);
+    padding-bottom: 6px;
 }
 
 h3 {
@@ -70,27 +49,22 @@ h3 {
 
 p {
     color: var(--cor-texto);
-    line-height: 1.8;        /* Aula 4: espaçamento entre linhas */
+    line-height: 1.8;
     margin-bottom: 16px;
 }
 
-/* =============================================
-   HEADER
-   Aula 4: background-color, padding, text-align
-   Aula 4: border-bottom como divisor visual
-   ============================================= */
 header {
     background-color: var(--cor-secundaria);
     text-align: center;
     padding: 40px 20px;
-    border-bottom: 5px solid var(--cor-destaque); /* Aula 4: border-bottom decorativo */
+    border-bottom: 5px solid var(--cor-destaque);
 }
 
 header img {
-    max-width: 300px;  /* Aula Flexbox: limita tamanho do logo */
-    height: auto;     /* Aula 4: mantém proporção */
+    max-width: 300px;
+    height: auto;
     margin-bottom: 15px;
-    display: block;   /* Aula 5: block para centralizar com margin auto */
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -106,10 +80,6 @@ header p {
     font-style: italic;
 }
 
-/* =============================================
-   NAV - Flexbox (Aula Flexbox)
-   Aula 4: background-color, padding
-   ============================================= */
 nav {
     background-color: var(--cor-primaria);
     padding: 0 20px;
@@ -118,77 +88,60 @@ nav {
 
 nav ul {
     list-style: none;
-    display: flex;            /* Aula Flexbox: ativa o flexbox */
-    flex-wrap: wrap;          /* Aula Flexbox: quebra linha se necessário */
-    gap: 5px;                 /* Aula Flexbox: espaço entre itens */
-    justify-content: center;  /* Aula Flexbox: centraliza no eixo principal */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
 }
 
 nav ul li a {
-    display: block;           /* Aula 5: block ocupa toda área clicável */
+    display: block;
     color: var(--cor-branca);
     text-decoration: none;
-    padding: 14px 16px;       /* Aula 4: padding para aumentar área de clique */
+    padding: 14px 16px;
     font-weight: 600;
     font-size: 0.9rem;
 }
 
 nav ul li a:hover {
-    color: var(--cor-destaque);  /* Aula 4: pseudo-elemento hover */
+    color: var(--cor-destaque);
 }
 
-/* =============================================
-   SECTION
-   Aula 4: padding, margin, border-bottom
-   Aula 5: scroll-margin-top compensa altura do nav
-   ============================================= */
 section {
     padding: 10px 0 30px 0;
     margin-bottom: 20px;
-    border-bottom: 1px solid #D9C9B0;  /* Aula 4: borda sutil entre seções */
-    scroll-margin-top: 80px;           /* Aula 5: compensa a altura do nav ao clicar nas âncoras */
+    border-bottom: 1px solid #D9C9B0;
+    scroll-margin-top: 80px;
 }
 
-/* =============================================
-   CAIXAS DE TEXTO
-   Aula 4: background-color, border-left, padding, margin
-   ============================================= */
 .caixa-texto {
-    background-color: var(--cor-caixa);         /* Aula 4: fundo diferenciado */
-    border-left: 4px solid var(--cor-primaria); /* Aula 4: borda esquerda colorida */
-    padding: 15px 20px;                         /* Aula 4: espaço interno */
-    margin-bottom: 25px;                        /* Aula 4: espaço abaixo */
+    background-color: var(--cor-caixa);
+    border-left: 4px solid var(--cor-primaria);
+    padding: 15px 20px;
+    margin-bottom: 25px;
 }
 
-/* =============================================
-   FIGURAS E IMAGENS
-   Aula 4: max-width, height auto, margin, padding
-   ============================================= */
 figure {
     margin: 25px 0;
     text-align: center;
 }
 
 figure img {
-    max-width: 100%;    /* Aula Flexbox: imagem não ultrapassa o container */
-    height: auto;       /* Aula 4: mantém proporção */
-    display: block;     /* Aula 5: block para centralizar */
+    max-width: 100%;
+    height: auto;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 3px solid var(--cor-destaque); /* Aula 4: border decorativo */
+    border: 3px solid var(--cor-destaque);
 }
 
 figcaption {
-    margin-top: 8px;           /* Aula 4: espaço entre imagem e legenda */
+    margin-top: 8px;
     font-style: italic;
     font-size: 0.9rem;
     color: var(--cor-primaria);
 }
 
-/* =============================================
-   LINKS
-   Aula 4: pseudo-elementos a:link e a:hover
-   ============================================= */
 a {
     color: var(--cor-primaria);
 }
@@ -197,12 +150,8 @@ a:hover {
     color: var(--cor-destaque);
 }
 
-/* =============================================
-   LISTA DE REFERÊNCIAS
-   Aula 4: padding para afastar bullets da borda
-   ============================================= */
 .lista-referencias {
-    padding-left: 25px;   /* Aula 4: afasta bullets da margem */
+    padding-left: 25px;
     margin-bottom: 25px;
 }
 
@@ -212,33 +161,29 @@ a:hover {
     line-height: 1.6;
 }
 
-/* =============================================
-   GALERIA - Flexbox (Aula Flexbox)
-   display flex, flex-wrap, gap, justify-content
-   ============================================= */
 .galeria {
-    display: flex;               /* Aula Flexbox: ativa flexbox */
-    flex-wrap: wrap;             /* Aula Flexbox: quebra linha quando necessário */
-    gap: 16px;                   /* Aula Flexbox: espaço entre os itens */
-    justify-content: center;     /* Aula Flexbox: centraliza os itens */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
     margin: 25px 0;
 }
 
 .galeria figure {
-    flex: 1 1 240px;   /* Aula Flexbox: flex-grow, flex-shrink e flex-basis */
-    max-width: 300px;  /* Aula Flexbox: max-width limita o crescimento */
+    flex: 1 1 240px;
+    max-width: 300px;
     margin: 0;
-    border: 1px solid #D9C9B0; /* Aula 4: borda suave nos cards */
-    padding: 10px;              /* Aula 4: espaço interno nos cards */
-    background-color: var(--cor-branca); /* Aula 4: fundo branco nos cards */
+    border: 1px solid #D9C9B0;
+    padding: 10px;
+    background-color: var(--cor-branca);
     text-align: center;
 }
 
 .galeria figure img {
-    width: 100%;         /* Aula Flexbox: ocupa largura do card */
-    height: 180px;       /* Aula 4: altura fixa para uniformidade */
-    object-fit: cover;   /* Aula 4: cover preenche sem distorcer */
-    border: none;        /* Remove a borda herdada das figuras gerais */
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border: none;
     margin: 0;
 }
 
@@ -249,10 +194,6 @@ a:hover {
     font-style: italic;
 }
 
-/* =============================================
-   LINK VOLTAR AO TOPO
-   Aula 4: text-align para alinhar à direita
-   ============================================= */
 .link-topo {
     text-align: right;
     margin-top: 20px;
@@ -268,17 +209,12 @@ a:hover {
     color: var(--cor-destaque);
 }
 
-/* =============================================
-   FOOTER
-   Aula 4: background-color, padding, text-align
-   Aula 4: border-top como divisor visual
-   ============================================= */
 footer {
     background-color: var(--cor-secundaria);
     padding: 25px 20px;
     text-align: center;
     margin-top: 40px;
-    border-top: 5px solid var(--cor-destaque); /* Aula 4: border-top decorativo */
+    border-top: 5px solid var(--cor-destaque);
 }
 
 footer p {
@@ -286,22 +222,17 @@ footer p {
     font-size: 0.9rem;
 }
 
-/* =============================================
-   RESPONSIVIDADE - @media (Aula Flexbox)
-   375px a 1920px conforme requisito do trabalho
-   ============================================= */
 @media (max-width: 768px) {
-
     h1 { font-size: 1.5rem; }
     h2 { font-size: 1.2rem; }
 
     nav ul {
-        flex-direction: column;  /* Aula Flexbox: empilha o menu em telas pequenas */
+        flex-direction: column;
         align-items: center;
     }
 
     .galeria {
-        flex-direction: column;  /* Aula Flexbox: galeria em coluna */
+        flex-direction: column;
         align-items: center;
     }
 
@@ -312,10 +243,8 @@ footer p {
 }
 
 @media (max-width: 375px) {
-
     body {
-        padding: 0 10px; /* Aula 4: menos padding lateral */
+        padding: 0 10px;
     }
-
     h1 { font-size: 1.2rem; }
 }
