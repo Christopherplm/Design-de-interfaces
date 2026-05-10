@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600&display=swap');
 
+/* root: Define variáveis globais de cores para reutilização em todo o código */
 :root {
     --cor-primaria: #7B3F00;
     --cor-secundaria: #4A2800;
@@ -222,6 +223,7 @@ footer p {
     font-size: 0.9rem;
 }
 
+/* @media: Aplica estilos específicos conforme a largura da tela (Responsividade) */
 @media (max-width: 768px) {
     h1 { font-size: 1.5rem; }
     h2 { font-size: 1.2rem; }
