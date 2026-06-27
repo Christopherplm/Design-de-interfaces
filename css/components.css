@@ -13,6 +13,12 @@ figure img {
     border: 3px solid var(--cor-destaque);
 }
 
+/* Imagens em formato retrato (vertical): largura reduzida para não dominar a página */
+.retrato {
+    width: 380px;
+    max-width: 100%;
+}
+
 figcaption {
     margin-top: 8px;
     color: var(--cor-primaria);
