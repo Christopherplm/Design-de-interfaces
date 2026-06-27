@@ -1,0 +1,12 @@
+/* variables.css — Variáveis globais (paleta de cores reutilizável) */
+:root {
+    --cor-primaria: #7B3F00;
+    --cor-secundaria: #4A2800;
+    --cor-destaque: #C8860A;
+    --cor-texto: #2C2C2C;
+    --cor-fundo: #F5F0E8;
+    --cor-branca: #ffffff;
+    --cor-caixa: #FDF8F2;
+    --cor-borda: #D9C9B0;
+    --cor-legenda: #D4B896;
+}

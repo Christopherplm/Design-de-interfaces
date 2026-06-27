@@ -1,0 +1,177 @@
+/* components.css — Componentes reutilizáveis (figuras, galeria, formulário, links) */
+
+figure {
+    margin: 25px 0;
+    text-align: center;
+}
+
+figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 3px solid var(--cor-destaque);
+}
+
+figcaption {
+    margin-top: 8px;
+    color: var(--cor-primaria);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.lista-referencias {
+    margin-bottom: 25px;
+    padding-left: 25px;
+}
+
+.lista-referencias li {
+    margin-bottom: 10px;
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin: 25px 0;
+}
+
+.galeria figure {
+    flex: 1 1 240px;
+    max-width: 300px;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid var(--cor-borda);
+    text-align: center;
+    background-color: var(--cor-branca);
+}
+
+.galeria figure img {
+    width: 100%;
+    height: 180px;
+    margin: 0;
+    border: none;
+    object-fit: cover;
+}
+
+.galeria figcaption {
+    margin-top: 8px;
+    color: var(--cor-primaria);
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+/* Formulário "Sugira um Conteúdo" */
+.sugestao-figura {
+    margin: 0;
+}
+
+.sugestao-figura img {
+    width: 100%;
+    height: 100%;
+    max-height: 480px;
+    border: 3px solid var(--cor-destaque);
+    object-fit: cover;
+}
+
+.sugestao-form {
+    display: grid;
+    gap: 18px;
+}
+
+.sugestao-form fieldset {
+    display: grid;
+    gap: 10px;
+    padding: 16px;
+    border: 1px solid var(--cor-borda);
+    background-color: var(--cor-caixa);
+}
+
+.sugestao-form legend {
+    padding: 0 8px;
+    color: var(--cor-primaria);
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+.sugestao-form label {
+    font-weight: 600;
+}
+
+.sugestao-form input,
+.sugestao-form select,
+.sugestao-form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: var(--cor-branca);
+}
+
+.sugestao-form textarea {
+    resize: vertical;
+}
+
+.opcoes {
+    display: grid;
+    gap: 8px;
+}
+
+.opcoes label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+}
+
+.opcoes input {
+    width: auto;
+}
+
+.sugestao-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    color: var(--cor-branca);
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--cor-primaria);
+    cursor: pointer;
+}
+
+.sugestao-form button:hover {
+    background-color: var(--cor-destaque);
+}
+
+.link-topo {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.link-topo a {
+    color: var(--cor-primaria);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.link-topo a:hover {
+    color: var(--cor-destaque);
+}
+
+/* @media: Responsividade dos componentes (galeria) */
+@media (max-width: 768px) {
+    .galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria figure {
+        max-width: 100%;
+        width: 100%;
+    }
+}
