@@ -1,5 +1,3 @@
-/* components.css — Componentes reutilizáveis (figuras, galeria, formulário, links) */
-
 figure {
     margin: 25px 0;
     text-align: center;
@@ -13,7 +11,6 @@ figure img {
     border: 3px solid var(--cor-destaque);
 }
 
-/* Imagens em formato retrato (vertical): largura reduzida para não dominar a página */
 .retrato {
     width: 380px;
     max-width: 100%;
@@ -70,14 +67,12 @@ figcaption {
     font-style: italic;
 }
 
-/* Formulário "Sugira um Conteúdo" */
 .sugestao-figura {
     margin: 0;
 }
 
 .sugestao-figura img {
     width: 100%;
-    height: 100%;
     max-height: 480px;
     border: 3px solid var(--cor-destaque);
     object-fit: cover;
@@ -169,7 +164,6 @@ figcaption {
     color: var(--cor-destaque);
 }
 
-/* @media: Responsividade dos componentes (galeria) */
 @media (max-width: 768px) {
     .galeria {
         flex-direction: column;

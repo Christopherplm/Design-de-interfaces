@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO / Google -->
     <title>História do Brasil: Da Colônia à Democracia</title>
-    <meta name="description" content="Linha do tempo da história do Brasil, do período colonial à redemocratização: ciclos econômicos, Império, Era Vargas, Ditadura Militar e a Constituição de 1988.">
+    <!-- Seomator: meta description abaixo de 920px -->
+    <meta name="description" content="Linha do tempo da história do Brasil: Colônia, Império, Era Vargas, Ditadura Militar e a redemocratização com a Constituição de 1988.">
     <meta name="author" content="Christopher Pereira Lopes">
     <meta name="keywords" content="História do Brasil, Brasil Colônia, Império, Era Vargas, Ditadura Militar, Diretas Já, Constituição de 1988">
 
-    <!-- Open Graph (redes sociais) -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="História do Brasil: Da Colônia à Democracia">
     <meta property="og:description" content="Uma jornada pelos processos de transição e conflitos sociais que moldaram o Brasil, da Colônia à Democracia.">
@@ -22,6 +21,9 @@
     <link rel="canonical" href="https://christopherplm.github.io/Design-de-interfaces/">
     <link rel="icon" href="img/logo.webp" type="image/webp">
 
+    <!-- Seomator: preload do LCP (logo) -->
+    <link rel="preload" as="image" href="img/logo.webp" type="image/webp" fetchpriority="high">
+
     <link rel="stylesheet" href="css/modern-normalize.css">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/base.css">
@@ -30,13 +32,16 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Seomator: preload das fontes -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
     <header id="topo">
-        <img src="img/logo.webp" alt="Logotipo do site História do Brasil">
+        <!-- Seomator: LCP com fetchpriority -->
+        <img src="img/logo.webp" alt="Logotipo do site História do Brasil" fetchpriority="high">
         <h1>História do Brasil</h1>
         <p>Da Colônia à Democracia — uma jornada pelos processos de transição e conflitos sociais que moldaram o país.</p>
     </header>
